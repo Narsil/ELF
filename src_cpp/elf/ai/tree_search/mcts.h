@@ -62,10 +62,10 @@ class MCTSAI_T : public AI_T<typename Actor::State, typename Actor::Action> {
       lastResult_ = ts_->run(s);
 
       clock.record("MCTS");
-      std::cout << "[" << this->getID()
-                << "] MCTSAI Result: " << lastResult_.info()
-                << " Action:" << lastResult_.best_action << std::endl;
-      std::cout << clock.summary() << std::endl;
+      // std::cout << "[" << this->getID()
+      //           << "] MCTSAI Result: " << lastResult_.info()
+      //           << " Action:" << lastResult_.best_action << std::endl;
+      // std::cout << clock.summary() << std::endl;
     } else {
       lastResult_ = ts_->run(s);
     }

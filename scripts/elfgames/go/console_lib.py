@@ -333,7 +333,7 @@ class GoConsoleGTP:
             return True, None
 
     def print_msg(self, ret, msg):
-        print("\n%s %s\n\n" % (("=" if ret else "?"), msg))
+        print("%s %s\n\n" % (("=" if ret else "?"), msg))
 
     def prompt(self, prompt_str, batch):
         # Show last command results.
